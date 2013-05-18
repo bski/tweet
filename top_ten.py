@@ -11,7 +11,7 @@ def hw(tweet_file):
 				if tags[i]["text"] in freq_table:
 					freq_table[tags[i]["text"]] += 1
 				else:
-					freq_table[tags[i]["text"]] = 0 
+					freq_table[tags[i]["text"]] = 1
 	lc=0
 	for word in sorted(freq_table, key=freq_table.get, reverse=True):
 		if lc <10:
